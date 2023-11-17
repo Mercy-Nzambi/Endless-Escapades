@@ -1,0 +1,43 @@
+header {
+    background-color: #F5F5DC; /* Set background color to white */
+    padding: 100px; /* Adjust padding to create space around the header content */
+    text-align: center; /* Optional: Center the content within the header */
+
+  }
+
+  h1 {
+    font-size: 80px;
+    
+}
+body   {
+    background-color:  #F5F5DC;
+    font-size: larger;
+    font-family: 'Comic Neue', cursive;
+    margin-top: 80px;
+    }
+    
+
+
+ul  {
+  list-style-type:none;
+}
+div.centered {
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  .column {
+    float: left;
+    width: 50%;
+    padding: 5px;
+  }
+  
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
