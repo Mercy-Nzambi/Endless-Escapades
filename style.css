@@ -1,0 +1,48 @@
+
+body{
+    background-color: rgb(252, 250, 247);
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    font-size: large;
+}
+ol.myOl{
+    display: inline-block;
+    text-align: left;
+}
+.navbar{
+    background-color:black;
+    position: relative;
+    z-index: 999;
+}
+.navbar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.navbar li{
+    display: inline-block;
+}
+.navbar li a{
+    color:bisque;
+    display:block;
+    padding:50px,30px;
+    text-decoration: none;
+}
+.navbar ul ul{
+    position: absolute;
+    top: 100%;
+    display: none;
+}
+.navbar ul ul li {
+    display: block;
+    }
+    
+.navbar li:hover ul {
+    display: block;
+}
+.navbar ul ul li a:hover {
+    background-color:aquamarine;
+    }
+.footer{
+    font-size: smaller;
+}
