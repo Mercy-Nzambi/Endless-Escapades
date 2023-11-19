@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Lucida Sans', sans-serif;
+            font-size: larger;
+        }
+
+        .centered {
+            text-align: center;
+        }
+
+        .header {
+            background-color: #f1f1f1;
+            padding: 30px;
+            text-align: center;
+        }
+
+        #navbar {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        #navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        #navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        #navbar a.active {
+            background-color: #04AA6D;
+            color: white;
+        }
+
+        .content {
+            padding: 16px;
+        }
+
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        .sticky+.content {
+            padding-top: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="centered">
+        <h1>Endless Escapades</h1>
+        <nav id="navbar">
+               <a href="C:\Users\mercy\OneDrive\Desktop\Group Website\about.html">Bookings</a>
+
+                        <a href="">Hotels</a>
+                        <a href="">Transportation</a>
+                    
+               
+               <a href="C:\Users\mercy\OneDrive\Desktop\Group Website\contact.html">Contact</a>
+           
+        </nav>
+        <div class="content">
+            <h2>Different Destinations To Consider</h2><br>
+            <p><b>&bull; Mombasa</b></p><br>
+            <a href="C:\Users\mercy\OneDrive\Desktop\Group Website\mombasa.html">
+                <img src="https://lh5.googleusercontent.com/p/AF1QipNMKAc-kRLE2VJ97SSs7OcUln7nmzknGPMnpYlw=w810-h468-n-k-no">
+            </a><br>
+            <p><b>&bull; Samburu</b></p>
+            <a href="C:\Users\mercy\OneDrive\Desktop\Group Website\samburu.html"><img style="height:80%;width:80%;"
+                    src="https://www.heleninwonderlust.co.uk/wp-content/uploads/2023/01/Samburu-National-Reserve-6.jpeg"></a>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 Endless Escapades. All Rights Reserved</p>
+    </footer>
+    <script>
+        window.onscroll = function () {
+            myFunction()
+        };
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+</body>
+
+</html>
